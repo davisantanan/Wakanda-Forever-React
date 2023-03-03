@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: black;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: black;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1-home {
+    background-image: url('https://pyxis.nymag.com/v1/imgs/92c/68a/c9a1849045be86030c7cb462cf48616b14-16-black-panther.rsquare.w700.jpg');
+}
+
+.banner-2-home {
+    background-image: url('https://i.pinimg.com/originals/8b/bf/4d/8bbf4d747b5a942c15825005f833fea5.jpg');
+}
+
+.banner-3-home {
+    background-image: url('https://i.pinimg.com/736x/9f/18/41/9f1841b48f843b82c2c63adeaee293b8.jpg');
+}
+
+@media (max-width: 768px) {
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 100px;
+    }   
+}

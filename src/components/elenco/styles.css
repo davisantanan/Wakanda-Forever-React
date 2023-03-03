@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Passion+One&display=swap');
+
+.fotos-contain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.fotos-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;   
+}
+
+.actors-contain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.actor-content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 80px;
+    column-gap: 60px;
+}
+
+.header-actor {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: aliceblue;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+}
+
+.img-actor {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.img-actor:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://br.web.img3.acsta.net/c_310_420/pictures/19/04/25/23/54/1990890.jpg');
+}
+.banner-2 {
+    background-image: url('https://br.web.img2.acsta.net/c_310_420/pictures/19/09/18/00/28/5856937.jpg');
+}
+.banner-3 {
+    background-image: url('https://br.web.img2.acsta.net/c_310_420/pictures/18/09/26/21/35/5483924.jpg');
+}
+.banner-4 {
+    background-image: url('https://br.web.img2.acsta.net/c_310_420/pictures/19/05/07/21/33/1556087.jpg');
+}
+.banner-5 {
+    background-image: url('https://br.web.img3.acsta.net/c_310_420/pictures/19/01/07/20/33/2527533.jpg');
+}
+.banner-6 {
+    background-image: url('https://br.web.img3.acsta.net/c_310_420/pictures/18/10/04/20/17/5033717.jpg');
+}
+.banner-7 {
+    background-image: url('https://br.web.img3.acsta.net/c_310_420/pictures/20/12/11/20/18/4413481.jpg');
+}
+.banner-8 {
+    background-image: url('https://br.web.img3.acsta.net/c_310_420/pictures/18/08/10/18/53/4093839.jpg');
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .fotos-contain {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotos-header {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .actor-content {
+        grid-template-columns: 1fr;
+    }
+}
