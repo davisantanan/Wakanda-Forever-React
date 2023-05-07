@@ -4,7 +4,7 @@ import foto from '../../assets/wakanda3.jpg'
 
 function Banner () {
     return (
-        <img id="banner" src={foto}></img>
+        <img alt='banner' id="banner" src={foto} />
     )
 }
 
