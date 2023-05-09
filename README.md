@@ -24,6 +24,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 - npm install
 - npm install react-router-dom
+- npm start
 
 
 
